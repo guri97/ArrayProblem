@@ -5,41 +5,40 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Day13_Array
+{
+
+    public class ArrayListOfDataTypes
     {
-
-        public class ArrayListOfDataTypes
+        int[] intArray = { 1, 2, 3, 4, 5, 6, 7 };
+        public void PrintIntArray()
         {
-            int[] intArray = { 1, 2, 3, 4, 5, 6, 7 };
-            public void PrintIntArray()
+            foreach (var element in intArray)
             {
-                foreach (var element in intArray)
-                {
-                    Console.WriteLine(element);
-                }
-                Console.WriteLine("------------------------------------");
+                Console.WriteLine(element);
             }
+            Console.WriteLine("------------------------------------");
+        }
 
-            double[] doubleArray = { 1.2, 1.3, 1.4, 1.5 };
-            public void PrintDoubleArray()
+        double[] doubleArray = { 1.2, 1.3, 1.4, 1.5 };
+        public void PrintDoubleArray()
+        {
+            foreach (var element in doubleArray)
             {
-                foreach (var element in doubleArray)
-                {
-                    Console.WriteLine(element);
-                }
-                Console.WriteLine("------------------------------------");
+                Console.WriteLine(element);
             }
+            Console.WriteLine("------------------------------------");
+        }
 
-            char[] charArray = { 'A', 'B', 'C', 'D' };
-            public void PrintCharArray()
+        char[] charArray = { 'A', 'B', 'C', 'D' };
+        public void PrintCharArray()
+        {
+            foreach (var element in charArray)
             {
-                foreach (var element in charArray)
-                {
-                    Console.WriteLine(element);
-                }
-                Console.WriteLine("------------------------------------");
+                Console.WriteLine(element);
             }
-
+            Console.WriteLine("------------------------------------");
         }
 
     }
 
+}
